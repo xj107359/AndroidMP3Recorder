@@ -36,6 +36,11 @@ extern  "C" {
 *  Global Definitions
 *
 ***********************************************************************/
+/* add ieee754_float32_t type */
+#undef HAVE_IEEE754_FLOAT32_T
+#ifndef HAVE_IEEE754_FLOAT32_T
+typedef float ieee754_float32_t;
+#endif
 
 #ifndef FALSE
 #define         FALSE                   0
