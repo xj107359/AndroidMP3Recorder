@@ -12,32 +12,40 @@
 extern "C" {
 #endif
 /*
- * Class:     com_czt_mp3recorder_util_LameUtil
+ * Class:     cn_sopho_destiny_lamelibrary_util_LameUtil
  * Method:    init
  * Signature: (IIIII)V
  */
-JNIEXPORT void JNICALL Java_com_czt_mp3recorder_util_LameUtil_init(JNIEnv *, jclass, jint, jint, jint, jint, jint);
+JNIEXPORT void JNICALL Java_cn_sopho_destiny_lamelibrary_util_LameUtil_init(JNIEnv *, jclass, jint, jint, jint, jint, jint);
 
 /*
- * Class:     com_czt_mp3recorder_util_LameUtil
+ * Class:     cn_sopho_destiny_lamelibrary_util_LameUtil
  * Method:    encode
  * Signature: ([S[SI[B)I
  */
-JNIEXPORT jint JNICALL Java_com_czt_mp3recorder_util_LameUtil_encode(JNIEnv *, jclass, jshortArray, jshortArray, jint, jbyteArray);
+JNIEXPORT jint JNICALL Java_cn_sopho_destiny_lamelibrary_util_LameUtil_encode(JNIEnv *, jclass, jshortArray, jshortArray, jint, jbyteArray);
 
 /*
- * Class:     com_czt_mp3recorder_util_LameUtil
+ * Class:     cn_sopho_destiny_lamelibrary_util_LameUtil
  * Method:    flush
  * Signature: ([B)I
  */
-JNIEXPORT jint JNICALL Java_com_czt_mp3recorder_util_LameUtil_flush(JNIEnv *, jclass, jbyteArray);
+JNIEXPORT jint JNICALL Java_cn_sopho_destiny_lamelibrary_util_LameUtil_flush(JNIEnv *, jclass, jbyteArray);
 
 /*
- * Class:     com_czt_mp3recorder_util_LameUtil
+ * Class:     cn_sopho_destiny_lamelibrary_util_LameUtil
  * Method:    close
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_czt_mp3recorder_util_LameUtil_close(JNIEnv *, jclass);
+JNIEXPORT void JNICALL Java_cn_sopho_destiny_lamelibrary_util_LameUtil_close(JNIEnv *, jclass);
+
+/*
+ * Class:     cn_sopho_destiny_lamelibrary_util_LameUtil
+ * Method:    getLameVersion
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_cn_sopho_destiny_lamelibrary_util_LameUtil_getLameVersion
+        (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

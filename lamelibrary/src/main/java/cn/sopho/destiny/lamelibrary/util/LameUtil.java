@@ -2,7 +2,7 @@ package cn.sopho.destiny.lamelibrary.util;
 
 public class LameUtil {
 	static{
-		System.loadLibrary("mp3lame");
+		System.loadLibrary("LameUtil");
 	}
 
 	/**
@@ -71,4 +71,10 @@ public class LameUtil {
 	 * Close LAME.
 	 */
 	public native static void close();
+
+	/**
+	 * Get LAME version
+	 */
+	public native static String getLameVersion();
+
 }

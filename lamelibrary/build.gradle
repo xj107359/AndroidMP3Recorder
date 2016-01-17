@@ -11,7 +11,8 @@ android {
         versionName "1.0"
 //        moduleName
         ndk {
-            moduleName = "HelloJni"
+            moduleName = "LameUtil"
+            cFlags = "-Isrc/main/jni/libmp3lame_3.99.5"
         }
     }
     buildTypes {

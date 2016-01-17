@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.czt.mp3recorder.util.LameUtil;
+import cn.sopho.destiny.lamelibrary.util.LameUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;

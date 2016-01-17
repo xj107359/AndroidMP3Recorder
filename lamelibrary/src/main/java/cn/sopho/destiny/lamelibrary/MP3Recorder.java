@@ -5,7 +5,7 @@ import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.os.Message;
 
-import com.czt.mp3recorder.util.LameUtil;
+import cn.sopho.destiny.lamelibrary.util.LameUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -120,6 +120,13 @@ public class MP3Recorder {
 	public void stop(){
 		mIsRecording = false;
 	}
+
+	public String getLameVersion()
+	{
+//		return "getLameVersion";
+		return LameUtil.getLameVersion();
+	}
+
 	public boolean isRecording() {
 		return mIsRecording;
 	}
